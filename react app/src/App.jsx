@@ -10,26 +10,31 @@ const heroStrings = [
 ];
 
 // Use Vite's BASE_URL for correct asset paths
+const base = "/fathers-day-2.0";
 const imageUrls = [
-  `${import.meta.env.BASE_URL}images/all-dads.jpeg`,
-  `${import.meta.env.BASE_URL}images/dad-to-be.jpeg`,
-  `${import.meta.env.BASE_URL}images/those-who-play-the-role-of-a-father.jpeg`,
-  `${import.meta.env.BASE_URL}images/dads-in-heaven-2.jpeg`,
-  `${import.meta.env.BASE_URL}images/stepdad.jpg`,
-  `${import.meta.env.BASE_URL}images/dad-who-lost-child.jpeg`,
-  `${import.meta.env.BASE_URL}images/fur-dad.jpeg`,
-  `${import.meta.env.BASE_URL}images/dads-with-lost-dads.jpg`,
-  `${import.meta.env.BASE_URL}images/adoptive-dad2.jpg`,
-  `${import.meta.env.BASE_URL}images/single-dad.jpg`,
-  `${import.meta.env.BASE_URL}images/new-dad.jpg`,
-  `${import.meta.env.BASE_URL}images/granddad-raising.jpg`
+  `${base}/images/all-dads.jpeg`,
+  `${base}/images/dad-to-be.jpeg`,
+  `${base}/images/those-who-play-the-role-of-a-father.jpeg`,
+  `${base}/images/dads-in-heaven-2.jpeg`,
+  `${base}/images/stepdad.jpg`,
+  `${base}/images/dad-who-lost-child.jpeg`,
+  `${base}/images/fur-dad.jpeg`,
+  `${base}/images/dads-with-lost-dads.jpg`,
+  `${base}/images/adoptive-dad2.jpg`,
+  `${base}/images/single-dad.jpg`,
+  `${base}/images/new-dad.jpg`,
+  `${base}/images/granddad-raising.jpg`
 ];
 
 function App() {
   const typedRef = useRef(null);
   const [slideIndex, setSlideIndex] = useState(0);
-  const [gallery, setGallery] = useState([]);
 
+  // Initialize gallery from localStorage on first render
+  const [gallery, setGallery] = useState(() => {
+    const savedGallery = localStorage.getItem("gallery");
+    return savedGallery ? JSON.parse(savedGallery) : [];
+  });
   // Load gallery from localStorage on mount
   useEffect(() => {
     const savedGallery = localStorage.getItem("gallery");
