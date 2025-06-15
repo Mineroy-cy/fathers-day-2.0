@@ -10,18 +10,18 @@ const heroStrings = [
 ];
 
  const imageUrls = [
-  "/images/all dads.jpeg",
-  "/images/dad to be.jpeg",
-  "/images/those who play the role of a father.jpeg",
-  "/images/dads in heaven 2.jpeg",
+   "/images/all-dads.jpeg",
+  "/images/dad-to-be.jpeg",
+  "/images/those-who-play-the-role-of-a-father.jpeg",
+  "/images/dads-in-heaven-2.jpeg",
   "/images/stepdad.jpg",
-  "/images/dad who lost child.jpeg",
-  "/images/fur dad.jpeg",
-  "/images/dads with lost dads.jpg",
-  "/images/adoptive dad2.jpg",
-  "/images/single dad.jpg",
-  "/images/new dad.jpg",
-  "/images/granddad raising.jpg"
+  "/images/dad-who-lost-child.jpeg",
+  "/images/fur-dad.jpeg",
+  "/images/dads-with-lost-dads.jpg",
+  "/images/adoptive-dad2.jpg",
+  "/images/single-dad.jpg",
+  "/images/new-dad.jpg",
+  "/images/granddad-raising.jpg"
 
 ];
 
