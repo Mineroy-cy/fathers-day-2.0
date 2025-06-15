@@ -9,20 +9,20 @@ const heroStrings = [
   "ADOPTIVE DADS","SINGLE DADS","NEW DADS","GRAND-DADS RAISING GRANDKIDS"
 ];
 
- const imageUrls = [
-   "/images/all-dads.jpeg",
-  "/images/dad-to-be.jpeg",
-  "/images/those-who-play-the-role-of-a-father.jpeg",
-  "/images/dads-in-heaven-2.jpeg",
-  "/images/stepdad.jpg",
-  "/images/dad-who-lost-child.jpeg",
-  "/images/fur-dad.jpeg",
-  "/images/dads-with-lost-dads.jpg",
-  "/images/adoptive-dad2.jpg",
-  "/images/single-dad.jpg",
-  "/images/new-dad.jpg",
-  "/images/granddad-raising.jpg"
-
+// Use Vite's BASE_URL for correct asset paths
+const imageUrls = [
+  `${import.meta.env.BASE_URL}images/all-dads.jpeg`,
+  `${import.meta.env.BASE_URL}images/dad-to-be.jpeg`,
+  `${import.meta.env.BASE_URL}images/those-who-play-the-role-of-a-father.jpeg`,
+  `${import.meta.env.BASE_URL}images/dads-in-heaven-2.jpeg`,
+  `${import.meta.env.BASE_URL}images/stepdad.jpg`,
+  `${import.meta.env.BASE_URL}images/dad-who-lost-child.jpeg`,
+  `${import.meta.env.BASE_URL}images/fur-dad.jpeg`,
+  `${import.meta.env.BASE_URL}images/dads-with-lost-dads.jpg`,
+  `${import.meta.env.BASE_URL}images/adoptive-dad2.jpg`,
+  `${import.meta.env.BASE_URL}images/single-dad.jpg`,
+  `${import.meta.env.BASE_URL}images/new-dad.jpg`,
+  `${import.meta.env.BASE_URL}images/granddad-raising.jpg`
 ];
 
 function App() {
@@ -151,4 +151,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
